@@ -36,7 +36,7 @@ namespace Rhythm.Revit.Tools
             //read files from directory
             string[] allfiles = System.IO.Directory.GetFiles(directoryPath, "*.rfa*", System.IO.SearchOption.AllDirectories);           
             //create a new form!
-            FamilyUpgradeForm statusBar = new FamilyUpgradeForm("Rhythm - Bulk Upgrade Families", "Upgrading family {0} of " + allfiles.Length.ToString(), "Batch Family Upgrayedd", allfiles.Length);
+            FamilyUpgradeForm statusBar = new FamilyUpgradeForm("Rhythm - Bulk Upgrade Families", "Upgrading family {0} of " + allfiles.Length.ToString(), "Batch Family Upgrade", allfiles.Length);
             //declare lists to output
             List<string> upgradedFiles = new List<string>();
             //List<string> notUpgradedFiles = new List<string>();
